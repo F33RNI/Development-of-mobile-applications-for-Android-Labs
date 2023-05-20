@@ -14,9 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showDialog(View v) {
-
-        CustomDialogFragment dialog = new CustomDialogFragment();
+        CustomDialogFragment dialog = new CustomDialogFragment(this);
         dialog.show(getSupportFragmentManager(), "custom");
     }
-
 }
