@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     public void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
