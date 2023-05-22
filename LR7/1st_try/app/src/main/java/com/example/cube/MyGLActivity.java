@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 public class MyGLActivity extends Activity {
+    //
 
     private GLSurfaceView glView;                   // use GLSurfaceView
 
