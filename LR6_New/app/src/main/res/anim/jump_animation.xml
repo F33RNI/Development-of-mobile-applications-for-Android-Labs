@@ -1,0 +1,17 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+
+    <!-- Анимация движения вверх -->
+    <translate
+        android:fromYDelta="0"
+        android:toYDelta="-100"
+        android:duration="500" />
+
+    <!-- Анимация движения вниз -->
+    <translate
+        android:fromYDelta="-100"
+        android:toYDelta="0"
+        android:startOffset="500"
+        android:duration="500" />
+
+</set>
