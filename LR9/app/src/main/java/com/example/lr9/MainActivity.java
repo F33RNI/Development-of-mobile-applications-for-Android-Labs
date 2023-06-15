@@ -50,11 +50,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     // Search all sensors with ID up to this value
     private static final int SENSOR_ID_MAX = 1000;
 
+    // Lists for sensors and TextViews
     private final List<Sensor> sensorsList = new ArrayList<>();
     private final List<TextView> textViewsList = new ArrayList<>();
-
-
-    //private Sensor mAccelerometer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
