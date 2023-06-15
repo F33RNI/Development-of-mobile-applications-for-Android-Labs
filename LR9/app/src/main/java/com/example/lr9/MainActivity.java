@@ -39,7 +39,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -115,7 +114,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         if (sensorManager != null) {
             for (Sensor sensor: sensorsList) {
                 try {
-                    sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+                    sensorManager.registerListener(this, sensor,
+                            SensorManager.SENSOR_DELAY_NORMAL);
                 } catch (Exception ignored) { }
             }
         }
