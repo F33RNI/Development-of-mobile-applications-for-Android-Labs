@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editText = (EditText) findViewById(R.id.edit_text);
-        size = (TextView)findViewById(R.id.size);
+        editText = findViewById(R.id.edit_text);
+        size = findViewById(R.id.size);
 
         // Connect all button clicks to current class (onClick(View v) void)
         findViewById(R.id.button_b).setOnClickListener(this);
@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     size.setText(String.format("%.0f", textSize));
                 }
                 break;
+
             case R.id.button_minus:
                 if (textSize > 18) {
                     textSize -= 2;
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     size.setText(String.format("%.0f", textSize));
                 }
                 break;
+
             case R.id.button_b:
                 if (editText.getTypeface().getStyle() == Typeface.ITALIC)
                     editText.setTypeface(editText.getTypeface(), Typeface.BOLD_ITALIC);
@@ -77,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     editText.setTypeface(Typeface.create(editText.getTypeface(), Typeface.NORMAL));
                 else editText.setTypeface(editText.getTypeface(), Typeface.BOLD);
                 break;
+
             case R.id.button_i:
                 if (editText.getTypeface().getStyle() == Typeface.BOLD)
                     editText.setTypeface(editText.getTypeface(), Typeface.BOLD_ITALIC);
@@ -86,6 +89,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     editText.setTypeface(Typeface.create(editText.getTypeface(), Typeface.NORMAL));
                 else editText.setTypeface(editText.getTypeface(), Typeface.ITALIC);
                 break;
+
             case R.id.button_sans:
                 if (editText.getTypeface().getStyle() == Typeface.ITALIC)
                     editText.setTypeface(Typeface.SANS_SERIF, Typeface.ITALIC);
@@ -95,6 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     editText.setTypeface(Typeface.SANS_SERIF, Typeface.BOLD);
                 else editText.setTypeface(Typeface.SANS_SERIF, Typeface.NORMAL);
                 break;
+
             case R.id.button_serif:
                 if (editText.getTypeface().getStyle() == Typeface.ITALIC)
                     editText.setTypeface(Typeface.SERIF, Typeface.ITALIC);
@@ -104,6 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     editText.setTypeface(Typeface.SERIF, Typeface.BOLD);
                 else editText.setTypeface(Typeface.SERIF, Typeface.NORMAL);
                 break;
+
             case R.id.button_monospace:
                 if (editText.getTypeface().getStyle() == Typeface.ITALIC)
                     editText.setTypeface(Typeface.MONOSPACE, Typeface.ITALIC);
@@ -138,8 +144,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.purple:
                 editText.setTextColor(Color.parseColor("#AA00FF"));
                 break;
-
-
         }
     }
 }
