@@ -1,9 +1,9 @@
 <resources>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-
-        <item name="android:windowBackground">@drawable/background2</item>
+        <item name="android:windowBackground">@drawable/background</item>
         <item name="android:windowNoTitle">true</item>
     </style>
+
     <style name="SpecialText" parent="TextAppearance.AppCompat.Title">
         <item name="android:textSize">36sp</item>
         <item name="android:textColor">#FEBDD1</item>

@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/figura"
-        android:title="Figura">
+    <item android:id="@+id/Draw"
+        android:title="Draw">
         <menu>
             <item android:id="@+id/rectangle"
                 android:title="Rectangle"/>
             <item android:id="@+id/star"
                 android:title="Star"/>
-            <item android:id="@+id/oval"
+            <item android:id="@+id/Oval"
                 android:title="Oval"/>
-            <item android:id="@+id/duga"
-                android:title="Duga"/>
+            <item android:id="@+id/Arc"
+                android:title="Arc"/>
+        </menu>
+    </item>
+    <item android:id="@+id/Rotation"
+        android:title="Animation">
+        <menu>
+            <item android:id="@+id/RotateRec"
+                android:title="Rotate Rectangle"/>
+
+            <item android:id="@+id/UpDown"
+                android:title="Un and Down Rectangle"/>
+
         </menu>
     </item>
     <item android:id="@+id/exit"

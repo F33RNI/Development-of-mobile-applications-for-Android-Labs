@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Resources</string>
+    <string name="app_name">LR2</string>
     <string name="text">Hello world</string>
     <string name="red">Red</string>
     <string name="green">Green</string>

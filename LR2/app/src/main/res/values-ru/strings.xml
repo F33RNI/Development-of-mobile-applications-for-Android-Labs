@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Ресурсы</string>
-    <string name="text">Привет, мир</string>
+    <string name="app_name">ЛР2</string>
+    <string name="text">Привет мир</string>
     <string name="red">Красный</string>
     <string name="green">Зелёный</string>
     <string name="blue">Синий</string>
     <string name="color">Цвет</string>
-    <string name="exit">Выход</string>
+    <string name="exit">Выйти</string>
 </resources>
